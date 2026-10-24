@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Daftar Arabisch</title>
+<meta name="description" content="Oefenschrift voor klassiek Arabisch">
+<meta name="theme-color" content="#f2f4f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1322" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Daftar">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <span class="brand-ar" lang="ar" dir="rtl">دَفْتَر</span>
+      <span class="brand-nl">Daftar, je oefenschrift voor klassiek Arabisch</span>
+    </div>
+    <div class="row"><div id="sync" class="sync">Opslag controleren</div><button type="button" id="logout" class="btn sm ghost" hidden>Uitloggen</button></div>
+  </header>
+  <main id="view"></main>
+</div>
+<script src="vendor/supabase.js"></script>
+<script src="js/config.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/boot.js"></script>
+</body>
+</html>
